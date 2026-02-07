@@ -2,6 +2,12 @@
 name = "github-activity-cli"
 version = "0.1.0"
 edition = "2024"
+description = "Simple CLI to get Github latest activity for given username"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/rezapambudi/github-activity-cli"
+homepage = "https://github.com/rezapambudi/github-activity-cli"
+
 
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
