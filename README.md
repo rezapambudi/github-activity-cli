@@ -5,5 +5,6 @@ github-activity-cli <username>
 #example
 github-activity-cli rezapambudi
 ```
-
-[Example](Github-activity-cli.gif)
+<p align="center">
+    <img src="Github-activity-cli.gif" alt="Example" width="80%">
+</p>
