@@ -1,10 +1,7 @@
 use serde_json::Value;
 
-pub fn print_activities(body: Value) {
-    body.as_array()
-        .into_iter()
-        .flatten()
-        .for_each(|event| describe_event(event));
+pub fn print_activities(body: &[serde_json::Value]) {
+    body.into_iter().for_each(|event| describe_event(event));
 }
 
 fn unwrap_value(filed: &Value) -> &str {

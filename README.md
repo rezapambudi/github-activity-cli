@@ -5,3 +5,5 @@ github-activity-cli <username>
 #example
 github-activity-cli rezapambudi
 ```
+
+[Example](Github-activity-cli.gif)
