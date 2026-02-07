@@ -1,0 +1,23 @@
+name: Cargo publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: cargo build --verbose
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: cargo-deployment
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish crates
+        env:
+          CRATES_TOKEN: ${{ secrets.TOKEN }}
+        run: cargo publish --token ${CRATES_TOKEN}
