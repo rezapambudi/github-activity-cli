@@ -1,6 +1,6 @@
 [package]
 name = "github-activity-cli"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2024"
 description = "Simple CLI to get Github latest activity for given username"
 license = "MIT"
